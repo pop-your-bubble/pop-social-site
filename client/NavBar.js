@@ -5,6 +5,12 @@ import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
 
 const NavBar = () => {
+  const [value, setValue] = React.useState(0);
+
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
+  };
+
   return (
     <div>
       <AppBar color="inherit" position="static">
@@ -13,7 +19,7 @@ const NavBar = () => {
             src="https://popsocial.app/img/pop-500px.png"
             style={{ width: 100 }}
           />
-          <Tabs value={0} indicatorColor="primary" textColor="primary">
+          <Tabs onChange={handleChange} value={value} indicatorColor="primary" textColor="primary">
             <Tab label="SignUp" />
             <Tab label="About Us" />
             <Tab label="Staff" />
