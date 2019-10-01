@@ -30,7 +30,7 @@ const NavBar = () => {
           >
             <Tab label="SignUp" value="/" />
             <Tab label="About Us" value="/about" />
-            <Tab label="Staff" value="staff" />
+            <Tab label="Staff" value="/staff" />
           </Tabs>
         </Toolbar>
       </AppBar>
