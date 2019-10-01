@@ -21,13 +21,13 @@ const SignUp = () => {
       <Typography variant="subtitle1" gutterBottom>
         Get Early Access
       </Typography>
-      <Grid item xs={12}>
-        <form method="POST" action="https://formspree.io/YOUREMAILHERE">
+      <form method="POST" action="https://formspree.io/yourbubblepop@gmail.com">
+        <Grid item xs={12}>
           <TextField
             id="outlined-email-input"
             label="Email"
             type="email"
-            name="email"
+            name="_replyto"
             autoComplete="email"
             margin="normal"
             variant="outlined"
@@ -39,13 +39,13 @@ const SignUp = () => {
               )
             }}
           />
-        </form>
-      </Grid>
-      <Grid item xs={12}>
-        <Button type="submit" variant="outlined" color="primary" width="100%">
-          Submit
-        </Button>
-      </Grid>
+        </Grid>
+        <Grid item xs={12}>
+          <Button type="submit" variant="outlined" color="primary" width="100%">
+            Submit
+          </Button>
+        </Grid>
+      </form>
     </Grid>
   );
 };
