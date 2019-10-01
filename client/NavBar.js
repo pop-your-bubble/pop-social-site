@@ -20,9 +20,9 @@ const NavBar = () => {
             style={{ width: 100 }}
           />
           <Tabs onChange={handleChange} value={value} indicatorColor="primary" textColor="primary">
-            <Tab label="SignUp" />
-            <Tab label="About Us" />
-            <Tab label="Staff" />
+            <Tab label="SignUp" href="/"/>
+            <Tab label="About Us" href="/about"/>
+            <Tab label="Staff" href="/staff"/>
           </Tabs>
         </Toolbar>
       </AppBar>

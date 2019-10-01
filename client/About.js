@@ -4,7 +4,7 @@ import Typography from "@material-ui/core/Typography";
 
 const About = () => {
   return (
-    <div>
+    <div style={{ padding: 10 }}>
       <Grid container justify="center" alignItems="center">
         <Grid item xs={2}></Grid>
         <Grid item xs={4}>
