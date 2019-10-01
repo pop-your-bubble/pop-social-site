@@ -14,8 +14,8 @@ const App = () => {
         <Route path="/" exact component={SignUp} />
         <Route path="/about" exact component={About} />
         <Route path="/staff" exact component={Staff} />
+        <Footer />
       </BrowserRouter>
-      <Footer />
     </div>
   );
 };
