@@ -9,7 +9,6 @@ import { BrowserRouter, Route } from "react-router-dom";
 const App = () => {
   return (
     <div>
-      <NavBar />
       <BrowserRouter>
         <NavBar />
         <Route path="/" exact component={SignUp} />
