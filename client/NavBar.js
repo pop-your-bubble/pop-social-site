@@ -19,10 +19,15 @@ const NavBar = () => {
             src="https://popsocial.app/img/pop-500px.png"
             style={{ width: 100 }}
           />
-          <Tabs onChange={handleChange} value={value} indicatorColor="primary" textColor="primary">
-            <Tab label="SignUp" href="/"/>
-            <Tab label="About Us" href="/about"/>
-            <Tab label="Staff" href="/staff"/>
+          <Tabs
+            onChange={handleChange}
+            value={value}
+            indicatorColor="primary"
+            textColor="primary"
+          >
+            <Tab label="SignUp" href="/" />
+            <Tab label="About Us" href="/about" />
+            <Tab label="Staff" href="/staff" />
           </Tabs>
         </Toolbar>
       </AppBar>
