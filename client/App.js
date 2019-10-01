@@ -9,8 +9,8 @@ import { BrowserRouter, Route } from "react-router-dom";
 const App = () => {
   return (
     <>
-      <NavBar />
       <BrowserRouter>
+        <NavBar />
         <Route path="/" exact component={SignUp} />
         <Route path="/about" exact component={About} />
         <Route path="/staff" exact component={Staff} />
