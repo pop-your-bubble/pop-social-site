@@ -11,13 +11,7 @@ const NavBar = () => {
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
-    if (newValue === 0) {
-      setRedirected(<Redirect to="/" />);
-    } else if (newValue === 1) {
-      setRedirected(<Redirect to="/about" />);
-    } else if (newValue === 2) {
-      setRedirected(<Redirect to="/staff" />);
-    }
+    setRedirected(<Redirect to={newValue} />);
   };
 
   return (
@@ -34,9 +28,9 @@ const NavBar = () => {
             indicatorColor="primary"
             textColor="primary"
           >
-            <Tab label="SignUp" />
-            <Tab label="About Us" />
-            <Tab label="Staff" />
+            <Tab label="SignUp" value="/" />
+            <Tab label="About Us" value="/about" />
+            <Tab label="Staff" value="staff" />
           </Tabs>
         </Toolbar>
       </AppBar>
