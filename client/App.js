@@ -4,7 +4,6 @@ import SignUp from "./SignUp";
 import About from "./About";
 import Staff from "./Staff";
 import { BrowserRouter, Route } from "react-router-dom";
-// import Route from "react-router-dom/Route";
 
 const App = () => {
   return (
