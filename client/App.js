@@ -1,5 +1,6 @@
 import React from 'react';
 import NavBar from './NavBar';
+import SignUp from './SignUp';
 
 export default class App extends React.Component {
   constructor(props){
@@ -10,6 +11,7 @@ export default class App extends React.Component {
     return (
       <div>
         <NavBar />
+        <SignUp />
       </div>
     )
   }

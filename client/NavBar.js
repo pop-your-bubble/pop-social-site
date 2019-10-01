@@ -15,9 +15,9 @@ const NavBar = () => {
             style={{ width: 100 }}
           />
           <Tabs value={0} indicatorColor="primary" textColor="primary">
+            <Tab label="SignUp" />
             <Tab label="About Us" />
             <Tab label="Staff" />
-            <Tab label="Item Three" />
           </Tabs>
         </Toolbar>
       </AppBar>
