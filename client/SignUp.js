@@ -15,10 +15,13 @@ const SignUp = () => {
           style={{ width: 400 }}
         />
       </Grid>
+      <Typography variant="h4" gutterBottom>
+        Pop your bubble.
+      </Typography>
       <Typography variant="subtitle1" gutterBottom>
         Introducing the Pop mobile app. Meet new friends when you're free.
       </Typography>
-      <Typography variant="subtitle1" gutterBottom>
+      <Typography variant="button" gutterBottom>
         Get Early Access
       </Typography>
       <form method="POST" action="https://formspree.io/yourbubblepop@gmail.com">
@@ -41,7 +44,7 @@ const SignUp = () => {
           />
         </Grid>
         <Grid item xs={12}>
-          <Button type="submit" variant="outlined" color="primary" width="100%">
+          <Button type="submit" variant="outlined" color="primary" fullWidth>
             Submit
           </Button>
         </Grid>
