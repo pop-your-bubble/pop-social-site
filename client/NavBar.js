@@ -11,9 +11,11 @@ const NavBar = ({ history }) => {
   const [redirected, setRedirected] = useState(null);
 
   const handleChange = (event, newValue) => {
-    setValue(newValue);
-    setRedirected(<Redirect to={newValue} />);
-    history.push(newValue);
+    if (history.location.pathname !== newValue) {
+      setValue(newValue);
+      setRedirected(<Redirect to={newValue} />);
+      history.push(newValue);
+    }
   };
 
   return (
