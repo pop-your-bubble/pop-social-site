@@ -1,6 +1,6 @@
 import React from "react";
 import { createBrowserHistory } from "history";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { Route, Router, Switch } from "react-router-dom";
 
 import About from "./About";
 import Footer from "./Footer";
@@ -13,7 +13,7 @@ const history = createBrowserHistory();
 const App = () => {
   return (
     <div>
-      <BrowserRouter history={history}>
+      <Router history={history}>
         <Route component={NavBar} />
         <Switch>
           <Route path="/" exact component={SignUp} />
@@ -22,7 +22,7 @@ const App = () => {
           <Route component={SignUp} />
         </Switch>
         <Route component={Footer} />
-      </BrowserRouter>
+      </Router>
     </div>
   );
 };
