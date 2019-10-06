@@ -1,6 +1,6 @@
 import React from "react";
 import { createBrowserHistory } from "history";
-import { Route, Router, Switch } from "react-router-dom";
+import { Route, Router, Switch, Redirect } from "react-router-dom";
 
 import About from "./About";
 import Footer from "./Footer";
@@ -17,9 +17,9 @@ const App = () => {
         <Route component={NavBar} />
         <Switch>
           <Route path="/" exact component={SignUp} />
-          <Route path="/about" exact component={About} />
-          <Route path="/staff" exact component={Staff} />
-          <Route component={SignUp} />
+          <Route path="/about"  component={About} />
+          <Route path="/staff"  component={Staff} />
+          <Redirect to="/" />
         </Switch>
         <Route component={Footer} />
       </Router>
