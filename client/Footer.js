@@ -23,11 +23,16 @@ const useStyles = makeStyles(theme => ({
 const footers = [
   {
     title: "Company",
-    description: ["Contact us"]
+    links: [
+      { description: "Contact us", path: "mailto:yourbubblepop@gmail.com" }
+    ]
   },
   {
     title: "Legal",
-    description: ["Privacy policy", "Terms of use"]
+    links: [
+      { description: "Privacy policy", path: "privacy" },
+      { description: "Terms of use", path: "termsofuse" }
+    ]
   }
 ];
 
@@ -45,10 +50,14 @@ const Footer = () => {
                   {footer.title}
                 </Typography>
                 <ul>
-                  {footer.description.map(item => (
-                    <li key={item}>
-                      <Link href="#" variant="subtitle1" color="textSecondary">
-                        {item}
+                  {footer.links.map(item => (
+                    <li key={item.description}>
+                      <Link
+                        href={item.path}
+                        variant="subtitle1"
+                        color="textSecondary"
+                      >
+                        {item.description}
                       </Link>
                     </li>
                   ))}
@@ -58,12 +67,7 @@ const Footer = () => {
           </Grid>
           <Box mt={2}>
             <Typography variant="body2" color="textSecondary" align="center">
-              {"Copyright © "}
-              <Link color="inherit" href="https://popsocial.app/">
-                Pop
-              </Link>{" "}
-              {new Date().getFullYear()}
-              {"."}
+              {"Copyright © Pop " + new Date().getFullYear() + "."}
             </Typography>
           </Box>
         </Container>
