@@ -7,21 +7,22 @@ import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
 import Box from "@material-ui/core/Box";
 
+import imgPopLogo from "./images/pop-logo.svg";
+
 const NavBar = ({ history }) => {
-  const [value, setValue] = useState(history.location.pathname);
-  const [redirected, setRedirected] = useState(null);
+  const [path, setPath] = useState(history.location.pathname);
 
   const handleChange = (event, newValue) => {
+    // Adds to history whenever tab is clicked and is navigating to different page
     if (history.location.pathname !== newValue) {
-      setValue(newValue);
-      setRedirected(<Redirect to={newValue} />);
       history.push(newValue);
     }
   };
 
   useEffect(() => {
+    // Sets path when page is about to change
     return () => {
-      setValue(history.location.pathname);
+      setPath(history.location.pathname);
     };
   });
 
@@ -31,14 +32,14 @@ const NavBar = ({ history }) => {
         <Toolbar>
           <Box flexGrow={1}>
             <img
-              src="https://popsocial.app/img/pop-500px.png"
+              src={imgPopLogo}
               style={{ width: 100 }}
             />
           </Box>
           <Box>
             <Tabs
               onChange={handleChange}
-              value={value}
+              value={path}
               indicatorColor="primary"
               textColor="primary"
             >
@@ -49,7 +50,7 @@ const NavBar = ({ history }) => {
           </Box>
         </Toolbar>
       </AppBar>
-      {redirected}
+      <Redirect to={path} /> {/* Changes page based on path */}
     </div>
   );
 };

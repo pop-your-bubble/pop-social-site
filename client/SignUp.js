@@ -6,13 +6,15 @@ import Typography from "@material-ui/core/Typography";
 import InputAdornment from "@material-ui/core/InputAdornment";
 import MailOutlineIcon from "@material-ui/icons/MailOutline";
 
+import imgPopIcon from "./images/pop-icon.png";
+
 const SignUp = () => {
   return (
     <div style={{ padding: 30 }}>
       <Grid container direction="column" justify="center" alignItems="center">
         <Grid item xs={12}>
           <img
-            src="https://popsocial.app/img/pop-500px.png"
+            src={imgPopIcon}
             style={{ width: 400 }}
           />
         </Grid>

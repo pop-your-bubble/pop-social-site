@@ -23,7 +23,7 @@ const App = () => {
           <Route path="/staff" component={Staff} />
           <Route path="/privacy" component={PrivacyPolicy} />
           <Route path="/termsofuse" component={TermsOfUse} />
-          <Redirect to="/" />
+          <Redirect to="/" /> {/* Redirects to root page when path doesn't exist */}
         </Switch>
         <Route component={Footer} />
       </Router>
