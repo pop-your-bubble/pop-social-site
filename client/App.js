@@ -1,11 +1,14 @@
 import React from "react";
+import { createBrowserHistory } from "history";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+
+import About from "./About";
+import Footer from "./Footer";
 import NavBar from "./NavBar";
 import SignUp from "./SignUp";
-import About from "./About";
 import Staff from "./Staff";
-import Footer from "./Footer";
-import history from "./history";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+
+const history = createBrowserHistory();
 
 const App = () => {
   return (
