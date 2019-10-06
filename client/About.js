@@ -2,6 +2,9 @@ import React from "react";
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 
+import popApp from "./images/pop-app.png";
+import people from "./images/people.jpg";
+
 const About = () => {
   return (
     <div style={{ padding: 10 }}>
@@ -9,7 +12,7 @@ const About = () => {
         <Grid item xs={2}></Grid>
         <Grid item xs={4}>
           <img
-            src="https://popsocial.app/img/mockup1.png"
+            src={popApp}
             style={{ width: 400 }}
           />
         </Grid>
@@ -33,7 +36,7 @@ const About = () => {
         </Grid>
         <Grid item xs={4}>
           <img
-            src="https://popsocial.app/img/photo2.jpg"
+            src={people}
             style={{ width: 400 }}
           />
         </Grid>

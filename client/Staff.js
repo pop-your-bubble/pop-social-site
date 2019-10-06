@@ -4,36 +4,38 @@ import ListItem from "@material-ui/core/ListItem";
 import ListItemText from "@material-ui/core/ListItemText";
 import Grid from "@material-ui/core/Grid";
 
+import ness from "./images/ness.jpg";
+
 const staffLeft = [
   {
     name: "Bumblebee Boy",
     description:
       "Ness (ネス, Ness) is the silent main protagonist of EarthBound and is analogous to Ninten and Lucas in their respective games. He greatly enjoys baseball; not only are most of his weapons various types of baseball bats, but he can also equip several baseball caps. In the EarthBound Player's Guide, he is said to wear a special baseball cap with his favorite team's logo on the front.",
-    imageURL: "https://pbs.twimg.com/media/CaPjgvPWQAAgQme.jpg"
+    imageURL: ness
   },
   {
     name: "Bumblebee Boy",
     description:
       "Ness (ネス, Ness) is the silent main protagonist of EarthBound and is analogous to Ninten and Lucas in their respective games. He greatly enjoys baseball; not only are most of his weapons various types of baseball bats, but he can also equip several baseball caps. In the EarthBound Player's Guide, he is said to wear a special baseball cap with his favorite team's logo on the front.",
-    imageURL: "https://pbs.twimg.com/media/CaPjgvPWQAAgQme.jpg"
+    imageURL: ness
   },
   {
     name: "Bumblebee Boy",
     description:
       "Ness (ネス, Ness) is the silent main protagonist of EarthBound and is analogous to Ninten and Lucas in their respective games. He greatly enjoys baseball; not only are most of his weapons various types of baseball bats, but he can also equip several baseball caps. In the EarthBound Player's Guide, he is said to wear a special baseball cap with his favorite team's logo on the front.",
-    imageURL: "https://pbs.twimg.com/media/CaPjgvPWQAAgQme.jpg"
+    imageURL: ness
   },
   {
     name: "Bumblebee Boy",
     description:
       "Ness (ネス, Ness) is the silent main protagonist of EarthBound and is analogous to Ninten and Lucas in their respective games. He greatly enjoys baseball; not only are most of his weapons various types of baseball bats, but he can also equip several baseball caps. In the EarthBound Player's Guide, he is said to wear a special baseball cap with his favorite team's logo on the front.",
-    imageURL: "https://pbs.twimg.com/media/CaPjgvPWQAAgQme.jpg"
+    imageURL: ness
   },
   {
     name: "Bumblebee Boy",
     description:
       "Ness (ネス, Ness) is the silent main protagonist of EarthBound and is analogous to Ninten and Lucas in their respective games. He greatly enjoys baseball; not only are most of his weapons various types of baseball bats, but he can also equip several baseball caps. In the EarthBound Player's Guide, he is said to wear a special baseball cap with his favorite team's logo on the front.",
-    imageURL: "https://pbs.twimg.com/media/CaPjgvPWQAAgQme.jpg"
+    imageURL: ness
   }
 ];
 
@@ -42,31 +44,31 @@ const staffRight = [
     name: "Bumblebee Boy",
     description:
       "Ness (ネス, Ness) is the silent main protagonist of EarthBound and is analogous to Ninten and Lucas in their respective games. He greatly enjoys baseball; not only are most of his weapons various types of baseball bats, but he can also equip several baseball caps. In the EarthBound Player's Guide, he is said to wear a special baseball cap with his favorite team's logo on the front.",
-    imageURL: "https://pbs.twimg.com/media/CaPjgvPWQAAgQme.jpg"
+    imageURL: ness
   },
   {
     name: "Bumblebee Boy",
     description:
       "Ness (ネス, Ness) is the silent main protagonist of EarthBound and is analogous to Ninten and Lucas in their respective games. He greatly enjoys baseball; not only are most of his weapons various types of baseball bats, but he can also equip several baseball caps. In the EarthBound Player's Guide, he is said to wear a special baseball cap with his favorite team's logo on the front.",
-    imageURL: "https://pbs.twimg.com/media/CaPjgvPWQAAgQme.jpg"
+    imageURL: ness
   },
   {
     name: "Bumblebee Boy",
     description:
       "Ness (ネス, Ness) is the silent main protagonist of EarthBound and is analogous to Ninten and Lucas in their respective games. He greatly enjoys baseball; not only are most of his weapons various types of baseball bats, but he can also equip several baseball caps. In the EarthBound Player's Guide, he is said to wear a special baseball cap with his favorite team's logo on the front.",
-    imageURL: "https://pbs.twimg.com/media/CaPjgvPWQAAgQme.jpg"
+    imageURL: ness
   },
   {
     name: "Bumblebee Boy",
     description:
       "Ness (ネス, Ness) is the silent main protagonist of EarthBound and is analogous to Ninten and Lucas in their respective games. He greatly enjoys baseball; not only are most of his weapons various types of baseball bats, but he can also equip several baseball caps. In the EarthBound Player's Guide, he is said to wear a special baseball cap with his favorite team's logo on the front.",
-    imageURL: "https://pbs.twimg.com/media/CaPjgvPWQAAgQme.jpg"
+    imageURL: ness
   },
   {
     name: "Bumblebee Boy",
     description:
       "Ness (ネス, Ness) is the silent main protagonist of EarthBound and is analogous to Ninten and Lucas in their respective games. He greatly enjoys baseball; not only are most of his weapons various types of baseball bats, but he can also equip several baseball caps. In the EarthBound Player's Guide, he is said to wear a special baseball cap with his favorite team's logo on the front.",
-    imageURL: "https://pbs.twimg.com/media/CaPjgvPWQAAgQme.jpg"
+    imageURL: ness
   }
 ];
 
