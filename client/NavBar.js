@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Redirect } from "react-router-dom";
+import { Link, Redirect } from "react-router-dom";
 
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
@@ -31,10 +31,12 @@ const NavBar = ({ history }) => {
       <AppBar color="inherit" position="static">
         <Toolbar>
           <Box flexGrow={1}>
-            <img
-              src={imgPopLogo}
-              style={{ width: 100 }}
-            />
+            <Link to="/" >
+              <img
+                src={imgPopLogo}
+                style={{ width: 100 }}
+              />
+            </Link>
           </Box>
           <Box>
             <Tabs
