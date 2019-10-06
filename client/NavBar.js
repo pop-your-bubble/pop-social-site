@@ -8,20 +8,18 @@ import Tab from "@material-ui/core/Tab";
 import Box from "@material-ui/core/Box";
 
 const NavBar = ({ history }) => {
-  const [value, setValue] = useState(history.location.pathname);
-  const [redirected, setRedirected] = useState(null);
+  const [path, setPath] = useState(history.location.pathname);
 
   const handleChange = (event, newValue) => {
     if (history.location.pathname !== newValue) {
-      setValue(newValue);
-      setRedirected(<Redirect to={newValue} />);
+      setPath(newValue);
       history.push(newValue);
     }
   };
 
   useEffect(() => {
     return () => {
-      setValue(history.location.pathname);
+      setPath(history.location.pathname);
     };
   });
 
@@ -38,7 +36,7 @@ const NavBar = ({ history }) => {
           <Box>
             <Tabs
               onChange={handleChange}
-              value={value}
+              value={path}
               indicatorColor="primary"
               textColor="primary"
             >
@@ -49,7 +47,7 @@ const NavBar = ({ history }) => {
           </Box>
         </Toolbar>
       </AppBar>
-      {redirected}
+      <Redirect to={path} />
     </div>
   );
 };
