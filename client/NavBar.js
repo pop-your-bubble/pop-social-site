@@ -11,12 +11,14 @@ const NavBar = ({ history }) => {
   const [path, setPath] = useState(history.location.pathname);
 
   const handleChange = (event, newValue) => {
+    // Adds to history whenever tab is clicked and is navigating to different page
     if (history.location.pathname !== newValue) {
       history.push(newValue);
     }
   };
 
   useEffect(() => {
+    // Sets path when page is about to change
     return () => {
       setPath(history.location.pathname);
     };
@@ -46,7 +48,7 @@ const NavBar = ({ history }) => {
           </Box>
         </Toolbar>
       </AppBar>
-      <Redirect to={path} />
+      <Redirect to={path} /> {/* Changes page based on path */}
     </div>
   );
 };
