@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Redirect } from "react-router-dom";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
@@ -17,6 +17,12 @@ const NavBar = ({ history }) => {
       history.push(newValue);
     }
   };
+
+  useEffect(() => {
+    return () => {
+      setValue(history.location.pathname);
+    };
+  });
 
   return (
     <div>
