@@ -12,7 +12,6 @@ const NavBar = ({ history }) => {
 
   const handleChange = (event, newValue) => {
     if (history.location.pathname !== newValue) {
-      setPath(newValue);
       history.push(newValue);
     }
   };
