@@ -5,14 +5,16 @@ import Toolbar from "@material-ui/core/Toolbar";
 import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
 import Box from "@material-ui/core/Box";
+import history from "./history";
 
-const NavBar = () => {
-  const [value, setValue] = useState(0);
+const NavBar = props => {
+  const [value, setValue] = useState(props.location.pathname);
   const [redirected, setRedirected] = useState(null);
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
     setRedirected(<Redirect to={newValue} />);
+    history.push(newValue);
   };
 
   return (
