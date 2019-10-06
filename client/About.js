@@ -2,8 +2,8 @@ import React from "react";
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 
-import popApp from "./images/pop-app.png";
-import people from "./images/people.jpg";
+import imgPopApp from "./images/pop-app.png";
+import imgPeople from "./images/people.jpg";
 
 const About = () => {
   return (
@@ -12,7 +12,7 @@ const About = () => {
         <Grid item xs={2}></Grid>
         <Grid item xs={4}>
           <img
-            src={popApp}
+            src={imgPopApp}
             style={{ width: 400 }}
           />
         </Grid>
@@ -36,7 +36,7 @@ const About = () => {
         </Grid>
         <Grid item xs={4}>
           <img
-            src={people}
+            src={imgPeople}
             style={{ width: 400 }}
           />
         </Grid>

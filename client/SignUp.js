@@ -6,7 +6,7 @@ import Typography from "@material-ui/core/Typography";
 import InputAdornment from "@material-ui/core/InputAdornment";
 import MailOutlineIcon from "@material-ui/icons/MailOutline";
 
-import logo from "./images/pop-logo.png";
+import imgPopIcon from "./images/pop-icon.png";
 
 const SignUp = () => {
   return (
@@ -14,7 +14,7 @@ const SignUp = () => {
       <Grid container direction="column" justify="center" alignItems="center">
         <Grid item xs={12}>
           <img
-            src={logo}
+            src={imgPopIcon}
             style={{ width: 400 }}
           />
         </Grid>

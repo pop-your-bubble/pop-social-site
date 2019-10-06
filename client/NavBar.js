@@ -7,7 +7,7 @@ import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
 import Box from "@material-ui/core/Box";
 
-import logo from "./images/pop-logo.png";
+import imgPopLogo from "./images/pop-logo.svg";
 
 const NavBar = ({ history }) => {
   const [path, setPath] = useState(history.location.pathname);
@@ -32,7 +32,7 @@ const NavBar = ({ history }) => {
         <Toolbar>
           <Box flexGrow={1}>
             <img
-              src={logo}
+              src={imgPopLogo}
               style={{ width: 100 }}
             />
           </Box>
