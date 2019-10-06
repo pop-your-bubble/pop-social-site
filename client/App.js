@@ -8,7 +8,6 @@ import NavBar from "./NavBar";
 import PrivacyPolicy from "./PrivacyPolicy";
 import SignUp from "./SignUp";
 import Staff from "./Staff";
-import TermsOfUse from "./TermsOfUse";
 
 const history = createBrowserHistory();
 
@@ -22,7 +21,6 @@ const App = () => {
           <Route path="/about" component={About} />
           <Route path="/staff" component={Staff} />
           <Route path="/privacy" component={PrivacyPolicy} />
-          <Route path="/termsofuse" component={TermsOfUse} />
           <Redirect to="/" /> {/* Redirects to root page when path doesn't exist */}
         </Switch>
         <Route component={Footer} />
