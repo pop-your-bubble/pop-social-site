@@ -10,7 +10,7 @@ import imgPopIcon from "./images/pop-icon.png";
 
 const SignUp = () => {
   return (
-    <div style={{ padding: 30 }}>
+    <div style={{ padding: "2%" }}>
       <Grid container direction="column" justify="center" alignItems="center">
         <Grid item xs={12}>
           <img

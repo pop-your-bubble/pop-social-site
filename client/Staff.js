@@ -74,9 +74,9 @@ const staffRight = [
 
 const Staff = () => {
   return (
-    <div style={{ padding: 20 }}>
+    <div style={{ padding: "5%" }}>
       <Grid container spacing={1} justify="center" alignItems="center">
-        <Grid item xs={6}>
+        <Grid item xs sm={6} md={6} lg={12}>
           <List>
             {staffLeft.map(staff => (
               <ListItem key={staff.name}>
@@ -93,12 +93,12 @@ const Staff = () => {
             ))}
           </List>
         </Grid>
-        <Grid item xs={6}>
+        <Grid item xs sm={6} md={6} lg={12}>
           <List>
             {staffRight.map(staff => (
               <ListItem key={staff.name}>
                 <img
-                  style={{ width: 80, "border-radius": "50%" }}
+                  style={{ width: 80, borderRadius: "50%" }}
                   src={staff.imageURL}
                 ></img>{" "}
                 <ListItemText

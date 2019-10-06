@@ -7,16 +7,16 @@ import imgPeople from "./images/people.jpg";
 
 const About = () => {
   return (
-    <div style={{ padding: 10 }}>
+    <div style={{ padding: "3%" }}>
       <Grid container justify="center" alignItems="center">
-        <Grid item xs={2}></Grid>
-        <Grid item xs={4}>
+        <Grid item xs={1}></Grid>
+        <Grid item xs={5}>
           <img
             src={imgPopApp}
-            style={{ width: 400 }}
+            style={{ width: "100%" }}
           />
         </Grid>
-        <Grid item xs={4}>
+        <Grid item xs={5}>
           <Typography variant="h5" gutterBottom>
             Make new connections.
           </Typography>
@@ -26,24 +26,24 @@ const About = () => {
             most likely have similar interests to you.
           </Typography>
         </Grid>
-        <Grid item xs={2}></Grid>
-        <Grid item xs={2}></Grid>
-        <Grid item xs={4}>
+        <Grid item xs={1}></Grid>
+        <Grid item xs={1}></Grid>
+        <Grid item xs={5}>
           <Typography variant="h5" gutterBottom>
             Plan when and where to meet.
           </Typography>
           <Typography variant="body2" gutterBottom></Typography>
         </Grid>
-        <Grid item xs={4}>
+        <Grid item xs={5}>
           <img
             src={imgPeople}
-            style={{ width: 400 }}
+            style={{ width: "100%" }}
           />
         </Grid>
-        <Grid item xs={2}></Grid>
-        <Grid item xs={2}></Grid>
-        <Grid item xs={4}></Grid>
-        <Grid item xs={4}>
+        <Grid item xs={1}></Grid>
+        <Grid item xs={1}></Grid>
+        <Grid item xs={5}></Grid>
+        <Grid item xs={5}>
           <Typography variant="h5" gutterBottom>
             Create communities.
           </Typography>
@@ -53,7 +53,7 @@ const About = () => {
             previous matches.
           </Typography>
         </Grid>
-        <Grid item xs={2}></Grid>
+        <Grid item xs={1}></Grid>
       </Grid>
     </div>
   );
