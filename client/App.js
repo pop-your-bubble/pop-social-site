@@ -1,6 +1,6 @@
 import React from "react";
-import { createBrowserHistory } from "history";
 import { Route, Router, Switch, Redirect } from "react-router-dom";
+import { createBrowserHistory } from "history";
 
 import About from "./About";
 import Footer from "./Footer";
