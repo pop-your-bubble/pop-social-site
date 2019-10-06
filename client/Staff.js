@@ -76,7 +76,7 @@ const Staff = () => {
   return (
     <div style={{ padding: "5%" }}>
       <Grid container spacing={1} justify="center" alignItems="center">
-        <Grid item xs sm={6} md={6} lg={12}>
+        <Grid item xs sm={6} md={6} lg={6}>
           <List>
             {staffLeft.map(staff => (
               <ListItem key={staff.name}>
@@ -93,7 +93,7 @@ const Staff = () => {
             ))}
           </List>
         </Grid>
-        <Grid item xs sm={6} md={6} lg={12}>
+        <Grid item xs sm={6} md={6} lg={6}>
           <List>
             {staffRight.map(staff => (
               <ListItem key={staff.name}>
