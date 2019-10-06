@@ -16,13 +16,15 @@ const App = () => {
     <div>
       <Router history={history}>
         <Route component={NavBar} />
-        <Switch>
-          <Route path="/" exact component={SignUp} />
-          <Route path="/about" component={About} />
-          <Route path="/staff" component={Staff} />
-          <Route path="/privacy" component={PrivacyPolicy} />
-          <Redirect to="/" /> {/* Redirects to root page when path doesn't exist */}
-        </Switch>
+        <div style={{ marginTop: 100 }}>
+          <Switch>
+            <Route path="/" exact component={SignUp} />
+            <Route path="/about" component={About} />
+            <Route path="/staff" component={Staff} />
+            <Route path="/privacy" component={PrivacyPolicy} />
+            <Redirect to="/" /> {/* Redirects to root page when path doesn't exist */}
+          </Switch>
+        </div>
         <Route component={Footer} />
       </Router>
     </div>

@@ -27,8 +27,8 @@ const NavBar = ({ history }) => {
   });
 
   return (
-    <div>
-      <AppBar color="inherit" position="static">
+    <div position="sticky">
+      <AppBar color="inherit">
         <Toolbar>
           <Box flexGrow={1}>
             <Link to="/" >
