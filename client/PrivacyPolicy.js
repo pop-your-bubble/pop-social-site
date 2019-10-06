@@ -1,9 +1,12 @@
 import React from "react";
 import { Typography } from "@material-ui/core";
+import Grid from "@material-ui/core/Grid";
 
 const PrivacyPolicy = () => {
   return (
-    <div style={{ paddingTop: 50, paddingBottom: 50, paddingLeft: 200, paddingRight: 200 }}>
+    <div style={{ paddingTop: "5%", paddingBottom:"5%", paddingLeft:"20%", paddingRight: "20%"}}>
+      <Grid container justify="center" alignItems="center">
+        <Grid item xs lg="auto" md="auto" sm="auto">
       <Typography>
       <Typography variant="h5" gutterBottom><b>OUR COMMITMENT TO YOU</b></Typography>
       <Typography variant="subtitle1" gutterBottom>At Pop, your privacy is a top priority. Your privacy is at the core of the way we design and build the services and products you know and love, so that you can fully trust them and focus on building meaningful connections.</Typography>
@@ -244,6 +247,8 @@ const PrivacyPolicy = () => {
 
 <Typography variant="subtitle1" gutterBottom>United States</Typography>
       </Typography>
+      </Grid>
+      </Grid>
     </div>
   );
 };
