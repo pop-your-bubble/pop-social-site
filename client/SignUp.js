@@ -1,10 +1,10 @@
 import React from "react";
-import Button from "@material-ui/core/Button";
+import ButtonGroup from "@material-ui/core/ButtonGroup";
 import Grid from "@material-ui/core/Grid";
-import TextField from "@material-ui/core/TextField";
 import Typography from "@material-ui/core/Typography";
-import InputAdornment from "@material-ui/core/InputAdornment";
-import MailOutlineIcon from "@material-ui/icons/MailOutline";
+import AppleIcon from "@material-ui/icons/Apple";
+import AndroidIcon from "@material-ui/icons/Android";
+import Fab from "@material-ui/core/Fab";
 
 import imgPopIcon from "./images/pop-icon.png";
 
@@ -13,10 +13,7 @@ const SignUp = () => {
     <div style={{ padding: "2%" }}>
       <Grid container direction="column" justify="center" alignItems="center">
         <Grid item xs={12}>
-          <img
-            src={imgPopIcon}
-            style={{ width: 400 }}
-          />
+          <img src={imgPopIcon} style={{ width: 400 }} />
         </Grid>
         <Typography variant="h4" gutterBottom>
           Pop your bubble.
@@ -27,34 +24,28 @@ const SignUp = () => {
         <Typography variant="button" gutterBottom>
           Get Early Access
         </Typography>
-        <form
-          method="POST"
-          action="https://formspree.io/yourbubblepop@gmail.com"
-        >
-          <Grid item xs={12}>
-            <TextField
-              id="outlined-email-input"
-              label="Email"
-              type="email"
-              name="_replyto"
-              autoComplete="email"
-              margin="normal"
-              variant="outlined"
-              InputProps={{
-                startAdornment: (
-                  <InputAdornment position="start">
-                    <MailOutlineIcon color="disabled" />
-                  </InputAdornment>
-                )
-              }}
-            />
-          </Grid>
-          <Grid item xs={12}>
-            <Button type="submit" variant="outlined" color="primary" fullWidth>
-              Submit
-            </Button>
-          </Grid>
-        </form>
+        <Grid item xs={12} md={6}>
+          <ButtonGroup fullWidth>
+            <Fab
+              variant="extended"
+              color="inherit"
+              size="large"
+              href="https://testflight.apple.com/join/U3JPFq2l"
+            >
+              <AppleIcon />
+              &nbsp;&nbsp;iOS
+            </Fab>
+            <Fab
+              variant="extended"
+              color="inherit"
+              size="large"
+              href="https://play.google.com/apps/testing/com.yourbubblepop"
+            >
+              <AndroidIcon />
+              &nbsp;&nbsp;Android
+            </Fab>
+          </ButtonGroup>
+        </Grid>
       </Grid>
     </div>
   );
