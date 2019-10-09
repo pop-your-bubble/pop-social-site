@@ -7,6 +7,9 @@ import Grid from "@material-ui/core/Grid";
 import imgDavid from "./images/David.jpg";
 import imgRick from "./images/Rick.jpg";
 import imgAndy from "./images/Andy.jpg";
+import imgYoon from "./images/Yoon.jpg";
+import imgMauricio from "./images/Mauricio.jpg";
+import imgSeokhyun from "./images/Seokhyun.png";
 import imgNess from "./images/ness.jpg";
 
 const staffLeft = [
@@ -14,7 +17,7 @@ const staffLeft = [
     name: "Yoonsup Lee",
     description:
       "My name is Yoon Lee, CEO and founder of POP. I am a senior MIS major student currently attending UT Austin. I am passionate about POP because I have witnessed my friends struggle with loneliness and isolation problem.",
-    imageURL: imgNess
+    imageURL: imgYoon
   },
   {
     name: "Andy Pham",
@@ -26,19 +29,7 @@ const staffLeft = [
     name: "Seokhyun Baek",
     description:
       "I’m the marketing lead at POP. I am a junior Marketing major, and my duties involve crafting marketing strategy and a boots on the ground initiative so POP is able to establish itself and rapidly expand at our locations in terms of user acquisition and brand recognition. I’ve seen many people I know go through the struggle of simply not knowing where to begin making friends, and I work on POP to create a solution for those people.",
-    imageURL: imgNess
-  },
-  {
-    name: "Bumblebee Boy",
-    description:
-      "Ness (ネス, Ness) is the silent main protagonist of EarthBound and is analogous to Ninten and Lucas in their respective games. He greatly enjoys baseball; not only are most of his weapons various types of baseball bats, but he can also equip several baseball caps. In the EarthBound Player's Guide, he is said to wear a special baseball cap with his favorite team's logo on the front.",
-    imageURL: imgNess
-  },
-  {
-    name: "Bumblebee Boy",
-    description:
-      "Ness (ネス, Ness) is the silent main protagonist of EarthBound and is analogous to Ninten and Lucas in their respective games. He greatly enjoys baseball; not only are most of his weapons various types of baseball bats, but he can also equip several baseball caps. In the EarthBound Player's Guide, he is said to wear a special baseball cap with his favorite team's logo on the front.",
-    imageURL: imgNess
+    imageURL: imgSeokhyun
   }
 ];
 
@@ -59,19 +50,7 @@ const staffRight = [
     name: "Mauricio Canales",
     description:
       "I'm a back-end developer for POP. I am a senior Computational Engineering major, and what motivates me to work at POP is that we are redefining what a social app can be and using it to create a better future. My expertise lies in Computational Engineer at UT Austin, Javascript, and NoSQL databases like Mongodb.  In my spare time I enjoy riding my bike around Austin and playing the guitar.",
-    imageURL: imgNess
-  },
-  {
-    name: "Bumblebee Boy",
-    description:
-      "Ness (ネス, Ness) is the silent main protagonist of EarthBound and is analogous to Ninten and Lucas in their respective games. He greatly enjoys baseball; not only are most of his weapons various types of baseball bats, but he can also equip several baseball caps. In the EarthBound Player's Guide, he is said to wear a special baseball cap with his favorite team's logo on the front.",
-    imageURL: imgNess
-  },
-  {
-    name: "Bumblebee Boy",
-    description:
-      "Ness (ネス, Ness) is the silent main protagonist of EarthBound and is analogous to Ninten and Lucas in their respective games. He greatly enjoys baseball; not only are most of his weapons various types of baseball bats, but he can also equip several baseball caps. In the EarthBound Player's Guide, he is said to wear a special baseball cap with his favorite team's logo on the front.",
-    imageURL: imgNess
+    imageURL: imgMauricio
   }
 ];
 
