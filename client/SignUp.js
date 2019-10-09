@@ -30,6 +30,8 @@ const SignUp = () => {
               variant="extended"
               color="inherit"
               size="large"
+              target="_blank"
+              rel="noopener noreferrer"
               href="https://testflight.apple.com/join/U3JPFq2l"
             >
               <AppleIcon />
@@ -39,6 +41,8 @@ const SignUp = () => {
               variant="extended"
               color="inherit"
               size="large"
+              target="_blank"
+              rel="noopener noreferrer"
               href="https://play.google.com/apps/testing/com.yourbubblepop"
             >
               <AndroidIcon />
