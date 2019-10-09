@@ -4,13 +4,12 @@ import ListItem from "@material-ui/core/ListItem";
 import ListItemText from "@material-ui/core/ListItemText";
 import Grid from "@material-ui/core/Grid";
 
-import imgDavid from "./images/David.jpg";
-import imgRick from "./images/Rick.jpg";
-import imgAndy from "./images/Andy.jpg";
-import imgYoon from "./images/Yoon.jpg";
-import imgMauricio from "./images/Mauricio.jpg";
-import imgSeokhyun from "./images/Seokhyun.png";
-import imgNess from "./images/ness.jpg";
+import imgDavid from "../images/David.jpg";
+import imgRick from "../images/Rick.jpg";
+import imgAndy from "../images/Andy.jpg";
+import imgYoon from "../images/Yoon.jpg";
+import imgMauricio from "../images/Mauricio.jpg";
+import imgSeokhyun from "../images/Seokhyun.png";
 
 const staffLeft = [
   {

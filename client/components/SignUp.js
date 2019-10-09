@@ -6,7 +6,7 @@ import AppleIcon from "@material-ui/icons/Apple";
 import AndroidIcon from "@material-ui/icons/Android";
 import Button from "@material-ui/core/Button";
 
-import imgPopIcon from "./images/pop-icon.png";
+import imgPopIcon from "../images/pop-icon.png";
 
 const SignUp = () => {
   return (

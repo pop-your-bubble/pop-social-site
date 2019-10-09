@@ -2,8 +2,8 @@ import React from "react";
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 
-import imgPopApp from "./images/pop-app.png";
-import imgPeople from "./images/people.jpg";
+import imgPopApp from "../images/pop-app.png";
+import imgPeople from "../images/people.jpg";
 
 const About = () => {
   return (

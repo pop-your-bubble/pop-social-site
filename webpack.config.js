@@ -14,7 +14,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       filename: "index.html",
-      template: `${SRC_DIR}/indexTemplate.html`,
+      template: `${SRC_DIR}/htmlTemplates/indexTemplate.html`,
       favicon: favicon,
       meta: {
         charset: "UTF-8",
@@ -25,7 +25,7 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       filename: "termsOfUse.html",
-      template: `${SRC_DIR}/termsOfUseTemplate.html`,
+      template: `${SRC_DIR}/htmlTemplates/termsOfUseTemplate.html`,
       favicon: favicon,
       meta: {
         charset: "UTF-8",
