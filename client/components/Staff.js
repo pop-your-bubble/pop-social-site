@@ -4,6 +4,8 @@ import ListItem from "@material-ui/core/ListItem";
 import ListItemText from "@material-ui/core/ListItemText";
 import Grid from "@material-ui/core/Grid";
 
+import useScrollToTopOnMount from "../customHooks/useScrollToTopOnMount";
+
 import imgDavid from "../images/David.jpg";
 import imgRick from "../images/Rick.jpg";
 import imgAndy from "../images/Andy.jpg";
@@ -54,6 +56,7 @@ const staffRight = [
 ];
 
 const Staff = () => {
+  useScrollToTopOnMount();
   return (
     <div style={{ padding: "5%" }}>
       <Grid container spacing={1} justify="center" alignItems="center">

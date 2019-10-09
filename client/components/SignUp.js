@@ -6,9 +6,12 @@ import AppleIcon from "@material-ui/icons/Apple";
 import AndroidIcon from "@material-ui/icons/Android";
 import Button from "@material-ui/core/Button";
 
+import useScrollToTopOnMount from "../customHooks/useScrollToTopOnMount";
+
 import imgPopIcon from "../images/pop-icon.png";
 
 const SignUp = () => {
+  useScrollToTopOnMount();
   return (
     <div style={{ padding: "2%" }}>
       <Grid container direction="column" justify="center" alignItems="center">

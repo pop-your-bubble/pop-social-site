@@ -2,7 +2,10 @@ import React from "react";
 import { Typography } from "@material-ui/core";
 import Grid from "@material-ui/core/Grid";
 
+import useScrollToTopOnMount from "../customHooks/useScrollToTopOnMount";
+
 const PrivacyPolicy = () => {
+  useScrollToTopOnMount();
   return (
     <div style={{ paddingTop: "5%", paddingBottom:"5%", paddingLeft:"20%", paddingRight: "20%"}}>
       <Grid container justify="center" alignItems="center">
