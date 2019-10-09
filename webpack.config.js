@@ -1,24 +1,52 @@
-const path = require('path');
-const SRC_DIR = path.join(__dirname, '/client');
-const DIST_DIR = path.join(__dirname, '/dist');
+const path = require("path");
+HtmlWebpackPlugin = require("html-webpack-plugin");
+
+const SRC_DIR = path.join(__dirname, "/client");
+const DIST_DIR = path.join(__dirname, "/dist");
+const favicon = `${SRC_DIR}/images/pop-icon.png`;
+
 module.exports = {
   entry: `${SRC_DIR}/index.js`,
   output: {
-  filename: 'bundle.js',
-  path: DIST_DIR
-},
-  module : {
-    rules : [
+    filename: "bundle.js",
+    path: DIST_DIR
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      filename: "index.html",
+      template: `${SRC_DIR}/indexTemplate.html`,
+      favicon: favicon,
+      meta: {
+        charset: "UTF-8",
+        name: "viewport",
+        content: "width=device-width, initial-scale=1.0",
+        "http-equiv": "X-UA-Compatible"
+      }
+    }),
+    new HtmlWebpackPlugin({
+      filename: "termsofuse.html",
+      template: `${SRC_DIR}/termsofuseTemplate.html`,
+      favicon: favicon,
+      meta: {
+        charset: "UTF-8",
+        name: "generator",
+        content: "pdf2htmlEX",
+        "http-equiv": "X-UA-Compatible"
+      }
+    })
+  ],
+  module: {
+    rules: [
       {
-        test : /\.js?/,
-        include : SRC_DIR,
-        loader : 'babel-loader',
+        test: /\.js?/,
+        include: SRC_DIR,
+        loader: "babel-loader"
       },
       {
         test: /\.(jpg|png|svg)$/,
-        loader: 'file-loader',
+        loader: "file-loader",
         options: {
-          name: '[path][name].[hash].[ext]'
+          name: "[path][name].[hash].[ext]"
         }
       }
     ]
