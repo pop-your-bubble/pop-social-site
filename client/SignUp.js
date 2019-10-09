@@ -4,7 +4,7 @@ import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 import AppleIcon from "@material-ui/icons/Apple";
 import AndroidIcon from "@material-ui/icons/Android";
-import Fab from "@material-ui/core/Fab";
+import Button from "@material-ui/core/Button";
 
 import imgPopIcon from "./images/pop-icon.png";
 
@@ -26,9 +26,9 @@ const SignUp = () => {
         </Typography>
         <Grid item xs={12} md={6}>
           <ButtonGroup fullWidth>
-            <Fab
-              variant="extended"
-              color="inherit"
+            <Button
+              variant="outlined"
+              color="primary"
               size="large"
               target="_blank"
               rel="noopener noreferrer"
@@ -36,10 +36,10 @@ const SignUp = () => {
             >
               <AppleIcon />
               &nbsp;&nbsp;iOS
-            </Fab>
-            <Fab
-              variant="extended"
-              color="inherit"
+            </Button>
+            <Button
+              variant="outlined"
+              color="primary"
               size="large"
               target="_blank"
               rel="noopener noreferrer"
@@ -47,7 +47,7 @@ const SignUp = () => {
             >
               <AndroidIcon />
               &nbsp;&nbsp;Android
-            </Fab>
+            </Button>
           </ButtonGroup>
         </Grid>
       </Grid>
