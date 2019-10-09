@@ -24,8 +24,8 @@ module.exports = {
       }
     }),
     new HtmlWebpackPlugin({
-      filename: "termsofuse.html",
-      template: `${SRC_DIR}/termsofuseTemplate.html`,
+      filename: "termsOfUse.html",
+      template: `${SRC_DIR}/termsOfUseTemplate.html`,
       favicon: favicon,
       meta: {
         charset: "UTF-8",

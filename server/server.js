@@ -6,7 +6,7 @@ const port = 3000;
 app.use(express.static(path.join(__dirname, "/../dist")));
 
 app.get("/termsofuse", function(req, res) {
-  res.sendFile(path.join(__dirname, "/../dist/termsofuse.html"), function(err) {
+  res.sendFile(path.join(__dirname, "/../dist/termsOfUse.html"), function(err) {
     if (err) {
       res.status(500).send(err);
     }
