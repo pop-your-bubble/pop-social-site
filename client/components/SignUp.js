@@ -16,7 +16,7 @@ const SignUp = () => {
     <div style={{ padding: "2%" }}>
       <Grid container direction="column" justify="center" alignItems="center">
         <Grid item xs={12}>
-          <img src={imgPopIcon} style={{ width: 400 }} />
+          <img src={imgPopIcon} style={{ width: 350 }} />
         </Grid>
         <Typography variant="h4" gutterBottom>
           Pop your bubble.

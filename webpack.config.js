@@ -16,22 +16,16 @@ module.exports = {
       filename: "index.html",
       template: `${SRC_DIR}/htmlTemplates/indexTemplate.html`,
       favicon: favicon,
-      meta: {
-        charset: "UTF-8",
-        name: "viewport",
-        content: "width=device-width, initial-scale=1.0",
-        "http-equiv": "X-UA-Compatible"
-      }
+      title: "Pop",
     }),
     new HtmlWebpackPlugin({
       filename: "termsOfUse.html",
       template: `${SRC_DIR}/htmlTemplates/termsOfUseTemplate.html`,
       favicon: favicon,
+      title: "Pop",
       meta: {
-        charset: "UTF-8",
         name: "generator",
         content: "pdf2htmlEX",
-        "http-equiv": "X-UA-Compatible"
       }
     })
   ],
