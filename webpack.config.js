@@ -23,10 +23,6 @@ module.exports = {
       template: `${SRC_DIR}/htmlTemplates/termsOfUseTemplate.html`,
       favicon: favicon,
       title: "Pop",
-      meta: {
-        name: "generator",
-        content: "pdf2htmlEX",
-      }
     })
   ],
   module: {
