@@ -1,7 +1,7 @@
 const express = require("express");
 const path = require("path");
 const app = express();
-const port = 3000;
+const port = 8080;
 
 app.use(express.static(path.join(__dirname, "/../dist")));
 
@@ -21,5 +21,7 @@ app.get("*", function(req, res) {
   });
 });
 
-
-app.listen(port, () => console.log(`Example app listening on port ${port}!`));
+const server = app.listen(process.env.PORT || port, () => {
+  const port = server.address().port;
+  console.log(`Pop app listening on port ${port}`);
+});
