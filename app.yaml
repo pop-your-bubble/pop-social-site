@@ -1,5 +1,6 @@
 runtime: nodejs10
 handlers:
+# Server isn't working in gCloud for some reason so rerouting using below
 - url: /
   static_files: dist/index.html
   upload: dist/index.html
