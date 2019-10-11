@@ -11,7 +11,7 @@ import imgRick from "../images/Rick.jpg";
 import imgAndy from "../images/Andy.jpg";
 import imgYoon from "../images/Yoon.jpg";
 import imgMauricio from "../images/Mauricio.jpg";
-import imgSeokhyun from "../images/Seokhyun.png";
+import imgSeokhyun from "../images/Seokhyun.jpg";
 
 const staffLeft = [
   {
