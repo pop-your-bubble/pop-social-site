@@ -1,7 +1,17 @@
 runtime: nodejs10
 handlers:
+- url: /
+  static_files: dist/index.html
+  upload: dist/index.html
+- url: /about
+  static_files: dist/index.html
+  upload: dist/index.html
+- url: /team
+  static_files: dist/index.html
+  upload: dist/index.html
+- url: /privacy
+  static_files: dist/index.html
+  upload: dist/index.html
 - url: /termsofuse
   static_files: dist/termsOfUse.html
   upload: dist/termsOfUse.html
-- url: /.*
-  script: auto
