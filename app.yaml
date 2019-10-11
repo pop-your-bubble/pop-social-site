@@ -1,5 +1,4 @@
 runtime: nodejs10
-env: flex
 handlers:
 - url: /
   static_files: dist/index.html
