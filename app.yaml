@@ -6,7 +6,7 @@ handlers:
 - url: /about
   static_files: dist/index.html
   upload: dist/index.html
-- url: /staff
+- url: /team
   static_files: dist/index.html
   upload: dist/index.html
 - url: /privacy

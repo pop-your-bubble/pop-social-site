@@ -47,7 +47,7 @@ const NavBar = ({ history }) => {
             >
               <Tab label="SignUp" value="/" />
               <Tab label="About" value="/about" />
-              <Tab label="Staff" value="/staff" />
+              <Tab label="Team" value="/team" />
             </Tabs>
           </Box>
         </Toolbar>

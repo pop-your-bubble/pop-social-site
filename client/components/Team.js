@@ -13,7 +13,7 @@ import imgYoon from "../images/Yoon.jpg";
 import imgMauricio from "../images/Mauricio.jpg";
 import imgSeokhyun from "../images/Seokhyun.jpg";
 
-const staffLeft = [
+const teamLeft = [
   {
     name: "Yoonsup Lee",
     description:
@@ -34,7 +34,7 @@ const staffLeft = [
   }
 ];
 
-const staffRight = [
+const teamRight = [
   {
     name: "Rick Kim",
     description:
@@ -55,23 +55,23 @@ const staffRight = [
   }
 ];
 
-const Staff = () => {
+const Team = () => {
   useScrollToTopOnMount();
   return (
     <div style={{ padding: "5%" }}>
       <Grid container spacing={1} justify="center" alignItems="center">
         <Grid item xs sm={6} md={6} lg={6}>
           <List>
-            {staffLeft.map(staff => (
-              <ListItem key={staff.name}>
+            {teamLeft.map(team => (
+              <ListItem key={team.name}>
                 <img
                   style={{ width: 80, borderRadius: "50%" }}
-                  src={staff.imageURL}
+                  src={team.imageURL}
                 ></img>{" "}
                 <ListItemText
                   style={{ padding: "15px" }}
-                  primary={staff.name}
-                  secondary={staff.description}
+                  primary={team.name}
+                  secondary={team.description}
                 />
               </ListItem>
             ))}
@@ -79,16 +79,16 @@ const Staff = () => {
         </Grid>
         <Grid item xs sm={6} md={6} lg={6}>
           <List>
-            {staffRight.map(staff => (
-              <ListItem key={staff.name}>
+            {teamRight.map(team => (
+              <ListItem key={team.name}>
                 <img
                   style={{ width: 80, borderRadius: "50%" }}
-                  src={staff.imageURL}
+                  src={team.imageURL}
                 ></img>{" "}
                 <ListItemText
                   style={{ padding: "15px" }}
-                  primary={staff.name}
-                  secondary={staff.description}
+                  primary={team.name}
+                  secondary={team.description}
                 />
               </ListItem>
             ))}
@@ -99,4 +99,4 @@ const Staff = () => {
   );
 };
 
-export default Staff;
+export default Team;
