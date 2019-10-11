@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link, Redirect } from "react-router-dom";
+import { BrowserView, MobileView } from "react-device-detect";
 
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
@@ -30,9 +31,9 @@ const NavBar = ({ history }) => {
     };
   });
 
-  return (
-    <div>
-      <Slide appear={false} direction="down" in={!trigger}>
+  const renderNavBar = () => {
+    return (
+      <div>
         <AppBar color="inherit" position="fixed">
           <Toolbar>
             <Box flexGrow={1}>
@@ -54,9 +55,20 @@ const NavBar = ({ history }) => {
             </Box>
           </Toolbar>
         </AppBar>
-      </Slide>
-      <Redirect to={path} /> {/* Changes page based on path */}
-    </div>
+        <Redirect to={path} /> {/* Changes page based on path */}
+      </div>
+    );
+  };
+
+  return (
+    <>
+      <BrowserView>{renderNavBar()}</BrowserView>
+      <MobileView>
+        <Slide appear={false} direction="down" in={!trigger}>
+          {renderNavBar()}
+        </Slide>
+      </MobileView>
+    </>
   );
 };
 export default NavBar;
