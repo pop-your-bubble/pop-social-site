@@ -3,6 +3,6 @@ handlers:
 - url: /termsofuse
   static_files: dist/termsOfUse.html
   upload: dist/termsOfUse.html
-- url: /.*
+- url: /*
   static_files: dist/index.html
   upload: dist/index.html
