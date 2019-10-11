@@ -4,5 +4,5 @@ handlers:
   static_files: dist/termsOfUse.html
   upload: dist/termsOfUse.html
 - url: /.*
-static_files: dist/index.html
-upload: dist/index.html
+  static_files: dist/index.html
+  upload: dist/index.html

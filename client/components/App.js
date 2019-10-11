@@ -7,7 +7,7 @@ import Footer from "./Footer";
 import NavBar from "./NavBar";
 import PrivacyPolicy from "./PrivacyPolicy";
 import SignUp from "./SignUp";
-import Staff from "./Staff";
+import Team from "./Team";
 
 const history = createBrowserHistory();
 
@@ -20,7 +20,7 @@ const App = () => {
           <Switch>
             <Route path="/" exact component={SignUp} />
             <Route path="/about" component={About} />
-            <Route path="/staff" component={Staff} />
+            <Route path="/team" component={Team} />
             <Route path="/privacy" component={PrivacyPolicy} />
             <Redirect to="/" /> {/* Redirects to root page when path doesn't exist */}
           </Switch>
