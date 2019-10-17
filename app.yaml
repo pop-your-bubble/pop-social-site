@@ -1,6 +1,7 @@
 runtime: nodejs10
+# Server isn't working in gCloud because sharing same Project as the actual Pop app.
+# Can delete everything below if moved to own Project in gCloud
 handlers:
-# Server isn't working in gCloud for some reason so rerouting using below
 - url: /
   static_files: dist/index.html
   upload: dist/index.html
