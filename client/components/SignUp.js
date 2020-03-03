@@ -35,7 +35,7 @@ const SignUp = () => {
               size="large"
               target="_blank"
               rel="noopener noreferrer"
-              href="https://testflight.apple.com/join/U3JPFq2l"
+              href="https://apps.apple.com/app/id1460938657"
             >
               <AppleIcon />
               &nbsp;&nbsp;iOS
@@ -46,7 +46,7 @@ const SignUp = () => {
               size="large"
               target="_blank"
               rel="noopener noreferrer"
-              href="https://play.google.com/apps/testing/com.yourbubblepop"
+              href="https://play.google.com/store/apps/details?id=com.popsocial"
             >
               <AndroidIcon />
               &nbsp;&nbsp;Android
